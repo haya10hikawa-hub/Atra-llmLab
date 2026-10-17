@@ -12,7 +12,7 @@
 - Inspect active GPU/Python jobs and child processes. One GPU job at a time; never restart or kill a running ja/v3 chain without explicit authorization. RTX 4060 may be used only with permission.
 - Write a falsifiable prediction, baseline, evaluation dataset/split, success and kill conditions before changing code. Identify model, adapter, LoRA scale, threshold, environment, source-contract SHA, and hashes.
 - Protect train/dev/validation/test partitions. Sealed datasets must not be opened, tuned against or re-used. Follow the existing test5 preregistration before any authorized one-time evaluation.
-- Do not send private Slack/Gmail/GitHub evidence or credentials to external APIs. Do not publish actual work data, model weights or adapters.
+- Follow [docs/adoption.md](docs/adoption.md) publication policy: publish general research by default only after checking data rights, model/teacher licenses and sensitive content. Never publish real work data, sealed gold, credentials, production prompts/thresholds/adapters or unreviewed checkpoints. A research-only adapter may be released only after explicit review of its provenance and license.
 - Inspect all affected callers, fixtures, tests, and failure boundaries before editing. Reuse existing adapters/evaluators where possible.
 
 ## Measurement
