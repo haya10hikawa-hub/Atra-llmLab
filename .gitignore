@@ -1,0 +1,45 @@
+# Credentials and local runtime
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+wandb/
+mlruns/
+.DS_Store
+
+# Private or raw datasets, logs, and caches. Public-safe summaries may go in runs/.
+datasets/
+data/
+artifacts/
+checkpoints/
+models/
+outputs/
+logs/
+work/
+.cache/
+**/test5/
+**/test4/
+**/test3/
+*.jsonl
+
+# Model weights and adapters
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.gguf
+*.bin
+**/adapter/
+**/checkpoints/
+
+# Device/debug outputs
+core
+core.*
+*.prof
+*.nsys-rep
+*.sqlite
+*.sqlite3
+
