@@ -9,6 +9,7 @@
 | [d1-s85](d1-3b/s85.md) | 最良候補との報告 | Formation＋PersonalのLoRA、0.85倍率 |
 | [d1-ja](d1-3b/ja.md) | 実行中との報告 | 日本語言い換えDの影響を切り分け |
 | [d1-v3](d1-3b/v3.md) | jaの後に自動開始予定との報告 | 言い換えD＋状態データsL |
+| [d1 vs Jev](d1-3b/jev-comparison.md) | 実測（test2・Full Replay・Decision Index） | d1候補とJev latest/previewの比較、KPI達成状況 |
 
 ## 記録規約
 

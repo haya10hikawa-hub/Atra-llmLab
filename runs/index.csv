@@ -2,3 +2,4 @@ run_id,model,task,method,reported_state,verification,record,reported_date
 s85,d1-3B,formation+personal,pairwise+joint-lora-0.85,best_reported,REPORTED_ONLY,runs/d1-3b/s85.md,2026-10-17
 ja,d1-3B,formation+personal,japanese-paraphrase-D,training_reported,REPORTED_ONLY,runs/d1-3b/ja.md,2026-10-17
 v3,d1-3B,formation+personal,japanese-paraphrase-D+state-sL,queued_after_ja_reported,REPORTED_ONLY,runs/d1-3b/v3.md,2026-10-17
+jev-cmp,d1-3B+Jev,formation+personal,comparison-test2-replay-decision-index,dev_compared,VERIFIED_LOCAL,runs/d1-3b/jev-comparison.md,2026-10-17
