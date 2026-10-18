@@ -1,4 +1,4 @@
-# d1-3B と Jev の比較（2026-10-17、開発データ test2・Decision Index）
+# d1-3B と Jev の比較（test2：2026-10-17、dev3：2026-10-18、Decision Index）
 
 - **Verification:** `VERIFIED_LOCAL`（ローカルの採点出力 `*.scored.json` / `replay.total.json` / DI `scores.json` と照合。報告値のみの項目は明記）
 - **データ:** すべて Claude 生成の合成データ。test2 は d1 の閾値調整・モデル選択に使用済みで、独立した性能証明ではない。人間Gold・実務データでは未評価。
@@ -85,3 +85,44 @@ KPI は「2 seed 平均」で判定する規定。下表は 1 seed の暫定判�
 1. **sel0 / sel1 の Full Replay**：重複（A2）と完全再現（A1）が KPI を満たすかを、事前に決めた成功条件（重複 ≤ 5、完全再現 ≥ 85/98、誤マージ ≤ 2、候補順による判断変化 < 5%）で判定する。
 2. d1 の B1〜B6 計測と、d1+Jev 振り分けの Full Replay での実証。
 3. 全 KPI を dev で満たした候補だけ、test6 の評価条件を事前登録して 1 回評価する。
+
+## 8. dev3 Full Replay（2026-10-18）
+**目的：** test2 は 24 シナリオで A ゲートを判定できない（Jev との重複差の bootstrap 90% CI = −1〜+8）ため、PM 決定（2026-10-18）によりモデル選択を新しい凍結 dev セット dev3 に移した。test2 と dev3 は**別データ**で、数値を混ぜて比較しない。
+
+**対象データ・条件（ローカル成果物で確認）：**
+- dev3：48 シナリオ、正解 Work 179、Signal 532、正解 REQUIRED 51。Claude 生成の合成データ（人間 Gold ではない）、新しい状態ルーブリック（2026-10-18）で作成。
+- d1 は base `LiquidAI/d1-3B`@`051bcc4`、Pairwise LoRA（2 epoch、mix 同一）。閾値は **test2 で調整した値を流用し、dev3 では再調整していない**（閾値の数値は非公開）。
+- ensemble：cons0＋seldq0 の Adapter 確率の平均、argmax で選択（候補選択方式）。
+- 実行日時（ローカル、`replay.total.json` 更新時刻）：Jev preview 11:32、cons0 13:38、cons1 15:05、ensemble 15:10、trap0 16:28、trap1 17:48（2026-10-18）。
+- SHA-256（先頭12桁）：manifest_dev3 `a0846adcbb11`、formation.dev3 `7c9931f20ca9`、personal.dev3 `61a14a2bf917`、replay.mjs `61c82b55299f`、score.mjs `8cefb226fe8d`、decide.py `6d2148e847ad`。Adapter：trap0 `e2de5164aa54`、cons0 `334e4269421c`、cons1 `d911009c466f`、trap1 `3ae1a7a8fed6`。
+
+| モデル | 完全再現 | 重複 | 誤マージ | 混在Work | 必須見逃し（/51） | 余計な必須 |
+|---|---:|---:|---:|---:|---:|---:|
+| Jev preview | 0.82（147/179） | 6 | 12 | 11 | 9 | 3 |
+| ensemble cons0+seldq0 | 0.80（143/179） | 15 | 11 | 11 | 3 | 11 |
+| trap0（seed 0） | 0.77（138/179） | 16 | 6 | 6 | 5 | 15 |
+| trap1（seed 1）※ | 0.80（143/179） | 23 | 8 | 8 | 10 | 16 |
+| cons1（seed 1） | 0.75（134/179） | 20 | 13 | 12 | 13 | 14 |
+| cons0（seed 0） | 0.72（128/179） | 30 | 7 | 7 | 4 | 28 |
+
+全値を `experiments/dev3/*/replay.total.json` と照合済み（`VERIFIED_LOCAL`）。※ trap1 は提供された報告表に無く、ローカル成果物から追加（trap 2 seed 平均：完全再現 0.785・重複 19.5・誤マージ 7・混在 7・必須見逃し 7.5・余計な必須 15.5）。
+
+**改善・悪化（Jev preview 比、FACT）：**
+- 改善：trap0 は誤マージ 12→6・混在 11→6（trap1 でも 8・8 で、2 seed とも Jev より少ない）。必須見逃しは ensemble・trap0・cons0 で Jev より少ない（3〜5 vs 9）。trap1（10）・cons1（13）は多い。
+- 悪化：完全再現・重複・余計な必須は全 d1 候補で Jev に劣る（重複 15〜30 vs 6、余計な必須 11〜28 vs 3）。
+- ensemble も Jev を明確に上回らない。cons0/cons1 の差（重複 30 vs 20）は seed 差を含む（1 seed ずつ）。
+
+**KPI との照合（参考判定）：** 基準は test2 規模（正解 Work 98・REQUIRED 30）で事前登録されたもので、dev3 用の基準は未登録。基準は変更せず、そのまま当てはめる。
+
+| KPI | 基準 | Jev preview | ensemble | trap0 | trap1 | cons1 | cons0 |
+|---|---|---|---|---|---|---|---|
+| A1 完全再現 | ≥ 0.85 | 不合格 | 不合格 | 不合格 | 不合格 | 不合格 | 不合格 |
+| A2 重複 | ≤ 3 | 不合格 | 不合格 | 不合格 | 不合格 | 不合格 | 不合格 |
+| A3 誤マージ・混在 | 各 ≤ 2 | 不合格 | 不合格 | 不合格 | 不合格 | 不合格 | 不合格 |
+| A4 必須見逃し | ≤ Jev preview（9） | 基準 | 合格 | 合格 | 不合格 | 不合格 | 合格 |
+| A5 余計な必須 | ≤ 5 | 合格 | 不合格 | 不合格 | 不合格 | 不合格 | 不合格 |
+| A6・A7・B1〜B8 | — | 未測定 | 未測定 | 未測定 | 未測定 | 未測定 | 未測定 |
+
+**未検証：** dev3 用 KPI 基準の登録、trap0 単体の dev3 実行スクリプトの特定（成果物の構成は `experiments/dev3/run.sh` の d1 手順と同形）、Jev preview のモデル版、実務データ・人間 Gold。test5/test6 は開封・再評価していない。
+
+**次の実験：** trap0 の誤マージ低減を保ったまま重複・余計な必須を減らせるかを、trap0/trap1 の 2 seed 平均で dev3 上で判定する（事前に dev3 用の A ゲート換算を登録してから）。
