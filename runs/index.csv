@@ -1,4 +1,6 @@
 run_id,model,task,method,reported_state,verification,record,reported_date
-s85,d1-3B,formation+personal,pairwise+joint-lora-0.85,best_reported,REPORTED_ONLY,runs/d1-3b/s85.md,2026-10-17
-ja,d1-3B,formation+personal,japanese-paraphrase-D,training_reported,REPORTED_ONLY,runs/d1-3b/ja.md,2026-10-17
-v3,d1-3B,formation+personal,japanese-paraphrase-D+state-sL,queued_after_ja_reported,REPORTED_ONLY,runs/d1-3b/v3.md,2026-10-17
+s85,d1-3B,formation+personal,pairwise+joint-lora-0.85,best_current,VERIFIED_LOCAL,runs/d1-3b/s85.md,2026-10-17
+ja,d1-3B,formation+personal,japanese-paraphrase-D,done_dev_only,VERIFIED_LOCAL,runs/d1-3b/ja.md,2026-10-17
+v3,d1-3B,formation+personal,japanese-paraphrase-D+state-sL,dev_gate_failed,VERIFIED_LOCAL,runs/d1-3b/v3.md,2026-10-17
+pseed1,d1-3B,formation+personal,seed1-replicate-of-mix-personal,done_dev_only,VERIFIED_LOCAL,runs/d1-3b/pseed1.md,2026-10-17
+v3seed1,d1-3B,formation+personal,seed1-replicate-of-v3,dev_gate_failed,VERIFIED_LOCAL,runs/d1-3b/v3.md,2026-10-17
