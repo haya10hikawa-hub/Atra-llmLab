@@ -10,7 +10,8 @@
 | [d1-ja](d1-3b/ja.md) | 棄却（Personal重大エラー増） | 日本語言い換えDの影響を切り分け |
 | [d1-v3](d1-3b/v3.md) | 棄却（devゲート不合格） | 言い換えD＋状態データsL |
 | [d1-pseed1](d1-3b/pseed1.md) | 検証継続 | seed違い再現。seed差＞モデル間差 |
-| [d1 vs Jev](d1-3b/jev-comparison.md) | 実測（test2・dev3 Full Replay・Decision Index） | d1候補とJev latest/previewの比較、KPI達成状況 |
+| [d1 vs Jev](d1-3b/jev-comparison.md) | 実測（test2・dev3・test6 Full Replay・Decision Index） | d1候補とJev latest/previewの比較、KPI達成状況 |
+| [d1 autoresearch](d1-3b/autoresearch.md) | E1・E2 不採用、基準 trap 維持 | 1変更ずつの3 seed改善ループ（AWS学習） |
 
 ## 記録規約
 
