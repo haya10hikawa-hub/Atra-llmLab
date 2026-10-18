@@ -4,3 +4,5 @@ ja,d1-3B,formation+personal,japanese-paraphrase-D,done_dev_only,VERIFIED_LOCAL,r
 v3,d1-3B,formation+personal,japanese-paraphrase-D+state-sL,dev_gate_failed,VERIFIED_LOCAL,runs/d1-3b/v3.md,2026-10-17
 pseed1,d1-3B,formation+personal,seed1-replicate-of-mix-personal,done_dev_only,VERIFIED_LOCAL,runs/d1-3b/pseed1.md,2026-10-17
 v3seed1,d1-3B,formation+personal,seed1-replicate-of-v3,dev_gate_failed,VERIFIED_LOCAL,runs/d1-3b/v3.md,2026-10-17
+trap0,d1-3B,formation+personal,consensus+train8-link-traps+argmax,test6_beats_jev_formation,VERIFIED_LOCAL,runs/d1-3b/trap0.md,2026-10-18
+ens-cons0-seldq0,d1-3B,formation+personal,2-lora-prob-mean-ensemble,test6_beats_jev_formation,VERIFIED_LOCAL,runs/d1-3b/trap0.md,2026-10-18
