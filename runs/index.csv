@@ -4,3 +4,5 @@ ja,d1-3B,formation+personal,japanese-paraphrase-D,done_dev_only,VERIFIED_LOCAL,r
 v3,d1-3B,formation+personal,japanese-paraphrase-D+state-sL,dev_gate_failed,VERIFIED_LOCAL,runs/d1-3b/v3.md,2026-10-17
 pseed1,d1-3B,formation+personal,seed1-replicate-of-mix-personal,done_dev_only,VERIFIED_LOCAL,runs/d1-3b/pseed1.md,2026-10-17
 v3seed1,d1-3B,formation+personal,seed1-replicate-of-v3,dev_gate_failed,VERIFIED_LOCAL,runs/d1-3b/v3.md,2026-10-17
+jev-cmp,d1-3B+Jev,formation+personal,comparison-test2-dev3-test6-replay-decision-index,test6_final_read,VERIFIED_LOCAL,runs/d1-3b/jev-comparison.md,2026-10-18
+autoresearch,d1-3B,formation+personal,one-change-loop-3seed-aws,E1_E2_discarded,VERIFIED_LOCAL,runs/d1-3b/autoresearch.md,2026-10-19
