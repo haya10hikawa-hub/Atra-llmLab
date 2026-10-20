@@ -1,0 +1,383 @@
+{
+ "inputs_sha256": {
+  "dev_real.cases.jsonl": "7e7b96ad785be0db726ad56fdd85d2f1e1659ab643b43b5f80908119186aee5f",
+  "folds.json": "a64fe1d70c3be54271959316410faf7ce88d8cc2243b8974ed010ce4517e1b79",
+  "dev/la10/probs.jsonl": "f9b066c9491629a25bbceedd1ee6425a765af7cd25bd0bbae9d5d51928308cb2",
+  "dev/t110/probs.jsonl": "c7bf26cde63c944afe9ee02875c9266bcf85bad0836fa785b088c4d628052f87",
+  "dev/rgA/probs.jsonl": "8e2d9b75dfbdb259850d80e305812e5d085c7455ddb298744a85f179525f2b30",
+  "dev/rgB/probs.jsonl": "ee98dc754da19ff87f432037a2050f9d94f8910493b1651497a43cce72dbac15",
+  "dev/jev-latest/answers.jsonl": "0d1ac7583f8ce5296c17503f6a6247298c79fd310e0486f7eb1b7a85a4f77196"
+ },
+ "n_pairs": 106,
+ "n_pos": 53,
+ "rows": [
+  {
+   "model": "la10",
+   "rule": "p>=0.5",
+   "acc": 0.632,
+   "FM": 2,
+   "miss": 37,
+   "fitted": {
+    "fit_on_A": {
+     "thr": 0.5
+    },
+    "fit_on_B": {
+     "thr": 0.5
+    }
+   }
+  },
+  {
+   "model": "la10",
+   "rule": "xfit_thr_acc",
+   "acc": 0.802,
+   "FM": 15,
+   "miss": 6,
+   "fitted": {
+    "fit_on_A": {
+     "thr": 0.0038244836446372104
+    },
+    "fit_on_B": {
+     "thr": 0.0033766123817395013
+    }
+   }
+  },
+  {
+   "model": "la10",
+   "rule": "xfit_thr_FM<=0",
+   "acc": 0.594,
+   "FM": 1,
+   "miss": 42,
+   "fitted": {
+    "fit_on_A": {
+     "thr": 0.9284088005554476
+    },
+    "fit_on_B": {
+     "thr": 0.8519528019683106
+    }
+   }
+  },
+  {
+   "model": "la10",
+   "rule": "xfit_thr_FM<=1",
+   "acc": 0.708,
+   "FM": 5,
+   "miss": 26,
+   "fitted": {
+    "fit_on_A": {
+     "thr": 0.039638839100970026
+    },
+    "fit_on_B": {
+     "thr": 0.46879062662624377
+    }
+   }
+  },
+  {
+   "model": "la10",
+   "rule": "xfit_thr_FM<=2",
+   "acc": 0.698,
+   "FM": 6,
+   "miss": 26,
+   "fitted": {
+    "fit_on_A": {
+     "thr": 0.02595735719779685
+    },
+    "fit_on_B": {
+     "thr": 0.2689414213699951
+    }
+   }
+  },
+  {
+   "model": "la10",
+   "rule": "xfit_platt_0.5",
+   "acc": 0.774,
+   "FM": 7,
+   "miss": 17,
+   "fitted": {
+    "fit_on_A": {
+     "a": 0.35246467495147893,
+     "b": 1.6239142420766757
+    },
+    "fit_on_B": {
+     "a": 0.4648607613911233,
+     "b": 1.5322190684464396
+    }
+   }
+  },
+  {
+   "model": "t110",
+   "rule": "p>=0.5",
+   "acc": 0.726,
+   "FM": 5,
+   "miss": 24,
+   "fitted": {
+    "fit_on_A": {
+     "thr": 0.5
+    },
+    "fit_on_B": {
+     "thr": 0.5
+    }
+   }
+  },
+  {
+   "model": "t110",
+   "rule": "xfit_thr_acc",
+   "acc": 0.764,
+   "FM": 20,
+   "miss": 5,
+   "fitted": {
+    "fit_on_A": {
+     "thr": 0.014063627043245474
+    },
+    "fit_on_B": {
+     "thr": 0.027585282226789985
+    }
+   }
+  },
+  {
+   "model": "t110",
+   "rule": "xfit_thr_FM<=0",
+   "acc": 0.585,
+   "FM": 3,
+   "miss": 41,
+   "fitted": {
+    "fit_on_A": {
+     "thr": 0.8519528019683106
+    },
+    "fit_on_B": {
+     "thr": 0.9362850057480346
+    }
+   }
+  },
+  {
+   "model": "t110",
+   "rule": "xfit_thr_FM<=1",
+   "acc": 0.651,
+   "FM": 3,
+   "miss": 34,
+   "fitted": {
+    "fit_on_A": {
+     "thr": 0.5926665999540697
+    },
+    "fit_on_B": {
+     "thr": 0.8807970779778823
+    }
+   }
+  },
+  {
+   "model": "t110",
+   "rule": "xfit_thr_FM<=2",
+   "acc": 0.679,
+   "FM": 3,
+   "miss": 31,
+   "fitted": {
+    "fit_on_A": {
+     "thr": 0.5
+    },
+    "fit_on_B": {
+     "thr": 0.8807970779778823
+    }
+   }
+  },
+  {
+   "model": "t110",
+   "rule": "xfit_platt_0.5",
+   "acc": 0.708,
+   "FM": 16,
+   "miss": 15,
+   "fitted": {
+    "fit_on_A": {
+     "a": 0.33783475490094705,
+     "b": 0.922173875470856
+    },
+    "fit_on_B": {
+     "a": 0.45198577924281347,
+     "b": 0.7995955533066315
+    }
+   }
+  },
+  {
+   "model": "rg",
+   "rule": "p>=0.5",
+   "acc": 0.764,
+   "FM": 11,
+   "miss": 14,
+   "fitted": {
+    "fit_on_A": {
+     "thr": 0.5
+    },
+    "fit_on_B": {
+     "thr": 0.5
+    }
+   }
+  },
+  {
+   "model": "rg",
+   "rule": "xfit_thr_acc",
+   "acc": 0.774,
+   "FM": 19,
+   "miss": 5,
+   "fitted": {
+    "fit_on_A": {
+     "thr": 0.22270013882530884
+    },
+    "fit_on_B": {
+     "thr": 0.05033063259747688
+    }
+   }
+  },
+  {
+   "model": "rg",
+   "rule": "xfit_thr_FM<=0",
+   "acc": 0.566,
+   "FM": 1,
+   "miss": 45,
+   "fitted": {
+    "fit_on_A": {
+     "thr": 0.9867771782476948
+    },
+    "fit_on_B": {
+     "thr": 0.9740426428022031
+    }
+   }
+  },
+  {
+   "model": "rg",
+   "rule": "xfit_thr_FM<=1",
+   "acc": 0.66,
+   "FM": 8,
+   "miss": 28,
+   "fitted": {
+    "fit_on_A": {
+     "thr": 0.8519528019683106
+    },
+    "fit_on_B": {
+     "thr": 0.9648551535992067
+    }
+   }
+  },
+  {
+   "model": "rg",
+   "rule": "xfit_thr_FM<=2",
+   "acc": 0.679,
+   "FM": 8,
+   "miss": 26,
+   "fitted": {
+    "fit_on_A": {
+     "thr": 0.6513548646660542
+    },
+    "fit_on_B": {
+     "thr": 0.96036116089903
+    }
+   }
+  },
+  {
+   "model": "rg",
+   "rule": "xfit_platt_0.5",
+   "acc": 0.774,
+   "FM": 12,
+   "miss": 12,
+   "fitted": {
+    "fit_on_A": {
+     "a": 0.3995015985841359,
+     "b": 0.7455069767424256
+    },
+    "fit_on_B": {
+     "a": 0.4725171047097136,
+     "b": -0.1790664430281677
+    }
+   }
+  },
+  {
+   "model": "jev",
+   "rule": "p>=0.5",
+   "acc": 0.811,
+   "FM": 4,
+   "miss": 16,
+   "fitted": {
+    "fit_on_A": {
+     "thr": 0.5
+    },
+    "fit_on_B": {
+     "thr": 0.5
+    }
+   }
+  },
+  {
+   "model": "jev",
+   "rule": "xfit_thr_acc",
+   "acc": 0.745,
+   "FM": 15,
+   "miss": 12,
+   "fitted": {
+    "fit_on_A": {
+     "thr": 0.11
+    },
+    "fit_on_B": {
+     "thr": 0.5
+    }
+   }
+  },
+  {
+   "model": "jev",
+   "rule": "xfit_thr_FM<=0",
+   "acc": 0.802,
+   "FM": 4,
+   "miss": 17,
+   "fitted": {
+    "fit_on_A": {
+     "thr": 0.58
+    },
+    "fit_on_B": {
+     "thr": 0.5
+    }
+   }
+  },
+  {
+   "model": "jev",
+   "rule": "xfit_thr_FM<=1",
+   "acc": 0.802,
+   "FM": 4,
+   "miss": 17,
+   "fitted": {
+    "fit_on_A": {
+     "thr": 0.56
+    },
+    "fit_on_B": {
+     "thr": 0.48
+    }
+   }
+  },
+  {
+   "model": "jev",
+   "rule": "xfit_thr_FM<=2",
+   "acc": 0.811,
+   "FM": 4,
+   "miss": 16,
+   "fitted": {
+    "fit_on_A": {
+     "thr": 0.52
+    },
+    "fit_on_B": {
+     "thr": 0.45
+    }
+   }
+  },
+  {
+   "model": "jev",
+   "rule": "xfit_platt_0.5",
+   "acc": 0.755,
+   "FM": 16,
+   "miss": 10,
+   "fitted": {
+    "fit_on_A": {
+     "a": 0.27850767444529834,
+     "b": 0.5539455686827295
+    },
+    "fit_on_B": {
+     "a": 1.270194022570349,
+     "b": 0.6520937348891356
+    }
+   }
+  }
+ ]
+}

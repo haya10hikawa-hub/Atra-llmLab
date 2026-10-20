@@ -1,0 +1,91 @@
+{
+ "cells": {
+  "C1a": {
+   "pair_auc": 0.687,
+   "pair_auc_x_target": 0.687,
+   "tp_fm0": 6,
+   "tp_fm2": 10,
+   "acc": 0.585,
+   "fm": 3,
+   "miss": 41,
+   "sig_auc": 0.83,
+   "trunc": 0,
+   "err": 0,
+   "tok_median": null
+  },
+  "C1b": {
+   "pair_auc": 0.862,
+   "pair_auc_x_target": 0.862,
+   "tp_fm0": 11,
+   "tp_fm2": 17,
+   "acc": 0.604,
+   "fm": 2,
+   "miss": 40,
+   "sig_auc": 0.779,
+   "trunc": 0,
+   "err": 0,
+   "tok_median": null
+  },
+  "C3": {
+   "pair_auc": 0.904,
+   "pair_auc_x_target": 0.899,
+   "tp_fm0": 35,
+   "tp_fm2": 35,
+   "acc": 0.783,
+   "fm": 5,
+   "miss": 18,
+   "sig_auc": 0.708,
+   "trunc": 0,
+   "err": 0,
+   "tok_median": 1755
+  },
+  "C2a": {
+   "pair_auc": 0.758,
+   "pair_auc_x_target": 0.741,
+   "tp_fm0": 9,
+   "tp_fm2": 11,
+   "acc": 0.585,
+   "fm": 8,
+   "miss": 36,
+   "sig_auc": 0.752,
+   "trunc": 0,
+   "err": 0,
+   "tok_median": 1221
+  },
+  "C2b": {
+   "pair_auc": 0.769,
+   "pair_auc_x_target": 0.85,
+   "tp_fm0": 9,
+   "tp_fm2": 15,
+   "acc": 0.604,
+   "fm": 0,
+   "miss": 42,
+   "sig_auc": 0.843,
+   "trunc": 0,
+   "err": 0,
+   "tok_median": 1221
+  }
+ },
+ "diffs": {
+  "C2b-C1b": [
+   -0.094,
+   -0.178,
+   -0.026
+  ],
+  "C2a-C1a": [
+   0.071,
+   -0.021,
+   0.166
+  ],
+  "C3-C2a": [
+   0.146,
+   0.069,
+   0.249
+  ],
+  "C3-C2b": [
+   0.136,
+   0.051,
+   0.239
+  ]
+ }
+}
