@@ -1,0 +1,225 @@
+{
+ "arms": {
+  "d1_chain": {
+   "pair_auc": 0.827874688501246,
+   "signal_auc": 0.7785714285714286,
+   "argmax": {
+    "all": {
+     "acc": 0.6369426751592356,
+     "FM_or_FP": 13,
+     "FN": 44
+    },
+    "pair": {
+     "acc": 0.6037735849056604,
+     "FM_or_FP": 2,
+     "FN": 40
+    },
+    "signal": {
+     "acc": 0.7058823529411765,
+     "FM_or_FP": 11,
+     "FN": 4
+    }
+   },
+   "xfit": {
+    "all": {
+     "acc": 0.6942675159235668,
+     "FM_or_FP": 25,
+     "FN": 23
+    },
+    "pair": {
+     "acc": 0.7547169811320755,
+     "FM_or_FP": 13,
+     "FN": 13
+    },
+    "signal": {
+     "acc": 0.5686274509803921,
+     "FM_or_FP": 12,
+     "FN": 10
+    }
+   }
+  },
+  "d1_direct5": {
+   "pair_auc": 0.7686009255962977,
+   "signal_auc": 0.8428571428571429,
+   "argmax": {
+    "all": {
+     "acc": 0.5987261146496815,
+     "FM_or_FP": 21,
+     "FN": 42
+    },
+    "pair": {
+     "acc": 0.6037735849056604,
+     "FM_or_FP": 0,
+     "FN": 42
+    },
+    "signal": {
+     "acc": 0.5882352941176471,
+     "FM_or_FP": 21,
+     "FN": 0
+    }
+   },
+   "xfit": {
+    "all": {
+     "acc": 0.7006369426751592,
+     "FM_or_FP": 21,
+     "FN": 26
+    },
+    "pair": {
+     "acc": 0.7169811320754716,
+     "FM_or_FP": 11,
+     "FN": 19
+    },
+    "signal": {
+     "acc": 0.6666666666666666,
+     "FM_or_FP": 10,
+     "FN": 7
+    }
+   }
+  },
+  "jev_chain": {
+   "pair_auc": 0.905126379494482,
+   "signal_auc": 0.7080357142857143,
+   "argmax": {
+    "all": {
+     "acc": 0.7452229299363057,
+     "FM_or_FP": 20,
+     "FN": 20
+    },
+    "pair": {
+     "acc": 0.8018867924528302,
+     "FM_or_FP": 9,
+     "FN": 12
+    },
+    "signal": {
+     "acc": 0.6274509803921569,
+     "FM_or_FP": 11,
+     "FN": 8
+    }
+   },
+   "xfit": {
+    "all": {
+     "acc": 0.7579617834394905,
+     "FM_or_FP": 5,
+     "FN": 33
+    },
+    "pair": {
+     "acc": 0.8018867924528302,
+     "FM_or_FP": 4,
+     "FN": 17
+    },
+    "signal": {
+     "acc": 0.6666666666666666,
+     "FM_or_FP": 1,
+     "FN": 16
+    }
+   }
+  },
+  "jev_direct5": {
+   "pair_auc": 0.9042363830544677,
+   "signal_auc": 0.7080357142857143,
+   "argmax": {
+    "all": {
+     "acc": 0.7388535031847133,
+     "FM_or_FP": 15,
+     "FN": 26
+    },
+    "pair": {
+     "acc": 0.7830188679245284,
+     "FM_or_FP": 5,
+     "FN": 18
+    },
+    "signal": {
+     "acc": 0.6470588235294118,
+     "FM_or_FP": 10,
+     "FN": 8
+    }
+   },
+   "xfit": {
+    "all": {
+     "acc": 0.7197452229299363,
+     "FM_or_FP": 16,
+     "FN": 28
+    },
+    "pair": {
+     "acc": 0.7452830188679245,
+     "FM_or_FP": 15,
+     "FN": 12
+    },
+    "signal": {
+     "acc": 0.6666666666666666,
+     "FM_or_FP": 1,
+     "FN": 16
+    }
+   }
+  }
+ },
+ "diffs": {
+  "d1_chain-d1_direct5|xfit_acc": {
+   "point": -0.006,
+   "ci95": [
+    -0.081,
+    0.07
+   ]
+  },
+  "d1_chain-d1_direct5|pair_auc": {
+   "point": 0.059,
+   "ci95": [
+    -0.022,
+    0.148
+   ]
+  },
+  "jev_chain-jev_direct5|xfit_acc": {
+   "point": 0.038,
+   "ci95": [
+    -0.007,
+    0.09
+   ]
+  },
+  "jev_chain-jev_direct5|pair_auc": {
+   "point": 0.001,
+   "ci95": [
+    -0.014,
+    0.017
+   ]
+  },
+  "d1_chain-jev_direct5|xfit_acc": {
+   "point": -0.025,
+   "ci95": [
+    -0.11,
+    0.06
+   ]
+  },
+  "d1_chain-jev_direct5|pair_auc": {
+   "point": -0.076,
+   "ci95": [
+    -0.159,
+    -0.004
+   ]
+  },
+  "d1_chain-jev_chain|xfit_acc": {
+   "point": -0.064,
+   "ci95": [
+    -0.154,
+    0.025
+   ]
+  },
+  "d1_chain-jev_chain|pair_auc": {
+   "point": -0.077,
+   "ci95": [
+    -0.164,
+    -0.005
+   ]
+  },
+  "compact select-direct5|pair_auc": {
+   "point": 0.125,
+   "ci95": [
+    0.049,
+    0.21
+   ]
+  }
+ },
+ "pair_only_compact_auc": {
+  "d1_select_compact": 0.8624065503737985,
+  "d1_direct5_compact": 0.737629049483802
+ }
+}
