@@ -1,0 +1,12 @@
+base jevbench {'all': '0.749 (173/231)', 'original': '0.931 (67/72)', 'noul': '0.676 (50/74)', 'choice': '0.791 (110/139)', 'score': '0.722 (13/18)', 'hard': '0.523 (58/111)', 'easy': '1.000 (48/48)', 'errors': 0}
+base vitaminc {'all': '0.816 (816/1000)', 'errors': 0}
+base massive-en {'all': '0.912 (912/1000)', 'errors': 0}
+mix-h2cs05s0 jevbench {'all': '0.736 (170/231)', 'original': '0.931 (67/72)', 'noul': '0.676 (50/74)', 'choice': '0.770 (107/139)', 'score': '0.722 (13/18)', 'hard': '0.495 (55/111)', 'easy': '1.000 (48/48)', 'errors': 0}
+mix-h2cs05s0 vitaminc {'all': '0.806 (806/1000)', 'errors': 0}
+mix-h2cs05s0 massive-en {'all': '0.917 (917/1000)', 'errors': 0}
+mix-h2cs05s3 jevbench {'all': '0.753 (174/231)', 'original': '0.931 (67/72)', 'noul': '0.676 (50/74)', 'choice': '0.799 (111/139)', 'score': '0.722 (13/18)', 'hard': '0.532 (59/111)', 'easy': '1.000 (48/48)', 'errors': 0}
+mix-h2cs05s3 vitaminc {'all': '0.810 (810/1000)', 'errors': 0}
+mix-h2cs05s3 massive-en {'all': '0.914 (914/1000)', 'errors': 0}
+mix-trap0 jevbench {'all': '0.745 (172/231)', 'original': '0.931 (67/72)', 'noul': '0.676 (50/74)', 'choice': '0.784 (109/139)', 'score': '0.722 (13/18)', 'hard': '0.514 (57/111)', 'easy': '1.000 (48/48)', 'errors': 0}
+mix-trap0 vitaminc {'all': '0.809 (809/1000)', 'errors': 0}
+mix-trap0 massive-en {'all': '0.913 (913/1000)', 'errors': 0}

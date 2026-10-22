@@ -4,3 +4,4 @@ ja,d1-3B,formation+personal,japanese-paraphrase-D,done_dev_only,VERIFIED_LOCAL,r
 v3,d1-3B,formation+personal,japanese-paraphrase-D+state-sL,dev_gate_failed,VERIFIED_LOCAL,runs/d1-3b/v3.md,2026-10-17
 pseed1,d1-3B,formation+personal,seed1-replicate-of-mix-personal,done_dev_only,VERIFIED_LOCAL,runs/d1-3b/pseed1.md,2026-10-17
 v3seed1,d1-3B,formation+personal,seed1-replicate-of-v3,dev_gate_failed,VERIFIED_LOCAL,runs/d1-3b/v3.md,2026-10-17
+bench3-general,d1-3B,general-benchmarks,lora-top3-vs-base (JevBench public/VitaminC/MASSIVE-en),done_exploratory_no_forgetting_seen,VERIFIED_LOCAL,runs/d1-3b/bench3-general.md,2026-10-22

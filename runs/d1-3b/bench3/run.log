@@ -1,0 +1,58 @@
+2026-10-20T16:46:35+09:00 base jevbench start
+Loading weights:   0%|          | 0/707 [00:00<?, ?it/s]Loading weights: 100%|##########| 707/707 [00:00<00:00, 12015.53it/s]
+{"d1_attention": "mem_efficient_fallback"}
+{"model": "d1", "peak_vram_gb": 6.12, "device_ok": true}
+2026-10-20T16:47:08+09:00 base vitaminc start
+Loading weights:   0%|          | 0/707 [00:00<?, ?it/s]Loading weights: 100%|##########| 707/707 [00:00<00:00, 12018.21it/s]
+{"d1_attention": "mem_efficient_fallback"}
+{"model": "d1", "peak_vram_gb": 5.86, "device_ok": true}
+2026-10-20T16:47:49+09:00 base massive-en start
+Loading weights:   0%|          | 0/707 [00:00<?, ?it/s]Loading weights: 100%|##########| 707/707 [00:00<00:00, 11835.36it/s]
+{"d1_attention": "mem_efficient_fallback"}
+{"model": "d1", "peak_vram_gb": 5.85, "device_ok": true}
+2026-10-20T16:48:36+09:00 mix-h2cs05s0 jevbench start
+Loading weights:   0%|          | 0/707 [00:00<?, ?it/s]Loading weights: 100%|##########| 707/707 [00:00<00:00, 12097.93it/s]
+{"d1_attention": "mem_efficient_fallback"}
+{"d1_lora": "experiments/lora/mix-h2cs05s0/adapter"}
+{"model": "d1", "peak_vram_gb": 6.12, "device_ok": true}
+2026-10-20T16:49:09+09:00 mix-h2cs05s0 vitaminc start
+Loading weights:   0%|          | 0/707 [00:00<?, ?it/s]Loading weights: 100%|##########| 707/707 [00:00<00:00, 11774.13it/s]
+{"d1_attention": "mem_efficient_fallback"}
+{"d1_lora": "experiments/lora/mix-h2cs05s0/adapter"}
+{"model": "d1", "peak_vram_gb": 5.86, "device_ok": true}
+2026-10-20T16:49:51+09:00 mix-h2cs05s0 massive-en start
+Loading weights:   0%|          | 0/707 [00:00<?, ?it/s]Loading weights: 100%|##########| 707/707 [00:00<00:00, 13601.07it/s]
+{"d1_attention": "mem_efficient_fallback"}
+{"d1_lora": "experiments/lora/mix-h2cs05s0/adapter"}
+{"model": "d1", "peak_vram_gb": 5.85, "device_ok": true}
+2026-10-20T16:50:39+09:00 mix-trap0 jevbench start
+Loading weights:   0%|          | 0/707 [00:00<?, ?it/s]Loading weights: 100%|##########| 707/707 [00:00<00:00, 11950.45it/s]
+{"d1_attention": "mem_efficient_fallback"}
+{"d1_lora": "experiments/lora/mix-trap0/adapter"}
+{"model": "d1", "peak_vram_gb": 6.12, "device_ok": true}
+2026-10-20T16:51:11+09:00 mix-trap0 vitaminc start
+Loading weights:   0%|          | 0/707 [00:00<?, ?it/s]Loading weights: 100%|##########| 707/707 [00:00<00:00, 11877.84it/s]
+{"d1_attention": "mem_efficient_fallback"}
+{"d1_lora": "experiments/lora/mix-trap0/adapter"}
+{"model": "d1", "peak_vram_gb": 5.86, "device_ok": true}
+2026-10-20T16:51:53+09:00 mix-trap0 massive-en start
+Loading weights:   0%|          | 0/707 [00:00<?, ?it/s]Loading weights: 100%|##########| 707/707 [00:00<00:00, 11839.66it/s]
+{"d1_attention": "mem_efficient_fallback"}
+{"d1_lora": "experiments/lora/mix-trap0/adapter"}
+{"model": "d1", "peak_vram_gb": 5.85, "device_ok": true}
+2026-10-20T16:52:40+09:00 mix-h2cs05s3 jevbench start
+Loading weights:   0%|          | 0/707 [00:00<?, ?it/s]Loading weights: 100%|##########| 707/707 [00:00<00:00, 12150.93it/s]
+{"d1_attention": "mem_efficient_fallback"}
+{"d1_lora": "experiments/lora/mix-h2cs05s3/adapter"}
+{"model": "d1", "peak_vram_gb": 6.12, "device_ok": true}
+2026-10-20T16:53:13+09:00 mix-h2cs05s3 vitaminc start
+Loading weights:   0%|          | 0/707 [00:00<?, ?it/s]Loading weights: 100%|##########| 707/707 [00:00<00:00, 12153.27it/s]
+{"d1_attention": "mem_efficient_fallback"}
+{"d1_lora": "experiments/lora/mix-h2cs05s3/adapter"}
+{"model": "d1", "peak_vram_gb": 5.86, "device_ok": true}
+2026-10-20T16:53:55+09:00 mix-h2cs05s3 massive-en start
+Loading weights:   0%|          | 0/707 [00:00<?, ?it/s]Loading weights: 100%|##########| 707/707 [00:00<00:00, 11554.65it/s]
+{"d1_attention": "mem_efficient_fallback"}
+{"d1_lora": "experiments/lora/mix-h2cs05s3/adapter"}
+{"model": "d1", "peak_vram_gb": 5.85, "device_ok": true}
+2026-10-20T16:54:43+09:00 BENCH3 DONE
