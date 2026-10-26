@@ -4,3 +4,6 @@ ja,d1-3B,formation+personal,japanese-paraphrase-D,done_dev_only,VERIFIED_LOCAL,r
 v3,d1-3B,formation+personal,japanese-paraphrase-D+state-sL,dev_gate_failed,VERIFIED_LOCAL,runs/d1-3b/v3.md,2026-10-17
 pseed1,d1-3B,formation+personal,seed1-replicate-of-mix-personal,done_dev_only,VERIFIED_LOCAL,runs/d1-3b/pseed1.md,2026-10-17
 v3seed1,d1-3B,formation+personal,seed1-replicate-of-v3,dev_gate_failed,VERIFIED_LOCAL,runs/d1-3b/v3.md,2026-10-17
+g12-gate,gemma-4-12B,formation,zero-shot+quantisation-gate (dev_real pair AUC),done_12b_adopted_26b_failed_quant,VERIFIED_LOCAL,runs/gemma-4-12b/g12-gate.md,2026-10-23
+g12L2,gemma-4-12B,formation+personal,lora-r16+general-typed-decision-25pct,done_dev_real_not_better_than_zero_shot,VERIFIED_LOCAL,runs/gemma-4-12b/g12L2.md,2026-10-24
+g12L2-replay,gemma-4-12B,formation+personal,full-replay-dev3+sealed-test8s-once,done_4of5_criteria_spurious_required_8,VERIFIED_LOCAL,runs/gemma-4-12b/g12L2-replay.md,2026-10-25
